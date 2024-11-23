@@ -1,0 +1,343 @@
+<!-- import React from "react";
+import { conectionBox, softSkilsBox } from "../../datas";
+
+export default function RSide() {
+   return (
+      <div className="PersonalitySide text-white">
+         <div className="gray-side  size-full px-[41px] py-9">
+            <div className=" flex gap-x-32 text-right">
+               <div>
+                  <img src="public/images/yolme.jpg" alt="" className=" rounded-full size-[200px]" />
+               </div>
+               <div className=" grid md:grid-cols-2 my-auto danaMedium gap-9 m-auto">
+                  <div className="first-sec space-y-9">
+                     <div className="fullName  py-10  w-[266px]">
+                        <div className=" mx-auto w-max">
+                           <p className=" text-white text-5xl">امید گودرزی</p>
+                        </div>
+                     </div>
+                     <div className="job  py-10  w-[266px]">
+                        <div className=" mx-auto w-max">
+                           <p className=" text-white text-5xl ">توسعه دهنده وب</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div className="second-sec space-y-9">
+                     <div className="bornData  py-10  w-[266px]">
+                        <div className=" mx-auto w-max">
+                           <p className=" text-white text-5xl">1385/02/03</p>
+                        </div>
+                     </div>
+                     <div className="education  py-10  w-[266px]">
+                        <div className=" mx-auto w-max">
+                           <p className=" text-white text-5xl">دیپلم</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div className="Conections mt-20 space-y-[10px]">
+               {conectionBox.map((item) => (
+                  <div className="conection-box px-16 py-7 flex gap-x-20">
+                     <span className=" my-auto">{item.icon}</span>
+                     <span className=" text-3xl my-auto danaMedium">{item.text}</span>
+                  </div>
+               ))}
+            </div>
+            <div className="About-me  mt-11  space-y-[10px] px-16 py-7">
+               <p className=" danaMedium text-4xl font-bold mb-2.5">درباره من</p>
+               <span>
+                  من برنامه نویس فرانت اند هستم و حدود 2 ساله ریکت کار میکنم و درکل سه سال توی زمینه ی برنامه نویسی وب مشغولم.عاشق چالش های فرانت اند هستم ودر کنار توسعه پروژه دوست دارم دانش و مهارت
+                  خودم رو ارتقا بدم و اصولا آدم ایده پردازی هستم .
+               </span>
+            </div>
+            <div className="Languages mt-11 space-y-[10px] px-16 py-7">
+               <p className=" danaMedium text-4xl font-bold mb-2.5">زبان ها</p>
+               <ul className="list-item ">
+                  <li className=" danaMedium  flex gap-x-5  ">
+                     <span className="text-[18px]">انگلیسی</span>
+                     <div className=" my-auto flex gap-x-3 text-left">
+                        <svg width="14" height="14" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <circle cx="4" cy="4" r="4" fill="#545454" fill-opacity="0.6" />
+                        </svg>
+                        <svg width="14" height="14" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <circle cx="4" cy="4" r="4" fill="#545454" fill-opacity="0.6" />
+                        </svg>
+                        <svg width="14" height="14" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <circle cx="4" cy="4" r="4" fill="#545454" fill-opacity="0.6" />
+                        </svg>
+                        <svg width="14" height="14" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <circle cx="4" cy="4" r="4" fill="#CECACA" />
+                        </svg>
+                        <svg width="14" height="14" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <circle cx="4" cy="4" r="4" fill="#CECACA" />
+                        </svg>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+            <div className="SoftSkils grid md:grid-cols-2 mt-11  px-16 py-7">
+               <div className="   space-y-[10px] ">
+                  <p className=" danaMedium text-4xl font-bold mb-2.5">مهارت های نرم</p>
+                  <ul className="list-item list-disc space-y-3">
+                     {softSkilsBox.map((item) => (
+                        <li className=" danaMedium grid grid-cols-2 w-96">
+                           <span>{item.name}</span>
+                           <div className=" my-auto flex gap-x-3 text-left  ">
+                              {Array(item.score)
+                                 .fill(0)
+                                 .map((item) => {
+                                    return (
+                                       <svg width="14" height="14" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <circle cx="4" cy="4" r="4" fill="#545454" fill-opacity="0.6" />
+                                       </svg>
+                                    );
+                                 })}
+                              {Array(5 - item.score)
+                                 .fill(0)
+                                 .map((item) => {
+                                    return (
+                                       <svg width="14" height="14" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <circle cx="4" cy="4" r="4" fill="#CECACA" />
+                                       </svg>
+                                    );
+                                 })}
+                           </div>
+                        </li>
+                     ))}
+                  </ul>
+               </div>
+               <div className=" my-24 me-24">
+                  <img src="public/images/istockphoto-1470714068-612x612_prev_ui.png" alt="" className=" scale-[1.9]" />
+               </div>
+            </div>
+         </div>
+      </div>
+   );
+} -->
+<!-- Left-Side -->
+<!-- import React from "react";
+import { TfiHtml5 } from "react-icons/tfi";
+import { IoLogoCss3 } from "react-icons/io";
+import { FaNodeJs } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { FaBootstrap } from "react-icons/fa";
+export default function LSide() {
+   return (
+      <div className="SkilsSide ">
+         <div className=" bg-[#ffffff] size-full px-11 py-14" style={{ borderRadius: "17px" }}>
+            <div className="Main-Skils">
+               <div className=" grid grid-cols-4">
+                  <div className=" col-span-1 bg-[#545454] max-w-[260px] text-white rounded-[10px] py-3">
+                     <div className=" mx-auto w-max ">
+                        <p className=" text-4xl danaDemiBold">مهارت های اصلی</p>
+                     </div>
+                  </div>
+                  <div className=" col-span-3 bg-[#545454] w-full h-[2px] my-auto"></div>
+               </div>
+               {/* /// */}
+               <div className="SkillBoxes mt-12 grid grid-cols-4 gap-y-6 ">
+                  <div class="box">
+                     <div class="percent">
+                        <svg>
+                           <circle cx="70" cy="70" r="70"></circle>
+                           <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="num  rounded-full ">
+                           <h2 className=" bg-[#C4C4C4]/20 rounded-full p-[20px] ">
+                              <TfiHtml5 className=" text-orange-600 !size-32 " />
+                           </h2>
+                        </div>
+                     </div>
+                     <h2 class="text">90%</h2>
+                  </div>
+                  <div class="box">
+                     <div class="percent">
+                        <svg>
+                           <circle className="css" cx="70" cy="70" r="70"></circle>
+                           <circle className="css" cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="num  rounded-full ">
+                           <h2 className=" bg-[#C4C4C4]/20 rounded-full p-[20px] ">
+                              <IoLogoCss3 className=" text-blue-500 !size-32 " />
+                           </h2>
+                        </div>
+                     </div>
+                     <h2 class="text">80%</h2>
+                  </div>
+                  <div class="box">
+                     <div class="percent">
+                        <svg>
+                           <circle className="js" cx="70" cy="70" r="70"></circle>
+                           <circle className="js" cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="num  rounded-full ">
+                           <h2 className=" bg-[#C4C4C4]/20 rounded-full p-[20px] ">
+                              <FaNodeJs className=" text-yellow-600 !size-32 " />
+                           </h2>
+                        </div>
+                     </div>
+                     <h2 class="text">85%</h2>
+                  </div>
+                  <div class="box">
+                     <div class="percent">
+                        <svg>
+                           <circle className="react" cx="70" cy="70" r="70"></circle>
+                           <circle className="react" cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="num  rounded-full ">
+                           <h2 className=" bg-[#C4C4C4]/20 rounded-full p-[20px] ">
+                              <FaReact className=" text-blue-400 !size-32 " />
+                           </h2>
+                        </div>
+                     </div>
+                     <h2 class="text">90%</h2>
+                  </div>{" "}
+                  <div class="box">
+                     <div class="percent">
+                        <svg>
+                           <circle className="tailwind" cx="70" cy="70" r="70"></circle>
+                           <circle className="tailwind" cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="num  rounded-full ">
+                           <h2 className=" bg-[#C4C4C4]/20 rounded-full p-[20px] ">
+                              <RiTailwindCssFill className=" text-cyan-500 !size-32 " />
+                           </h2>
+                        </div>
+                     </div>
+                     <h2 class="text">90%</h2>
+                  </div>
+                  <div class="box">
+                     <div class="percent">
+                        <svg>
+                           <circle className="bootstrap" cx="70" cy="70" r="70"></circle>
+                           <circle className="bootstrap" cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="num  rounded-full ">
+                           <h2 className=" bg-[#C4C4C4]/20 rounded-full p-[20px] ">
+                              <FaBootstrap className=" text-purple-600 !size-32 " />
+                           </h2>
+                        </div>
+                     </div>
+                     <h2 class="text">85%</h2>
+                  </div>
+               </div>
+            </div>
+            {/* /// */}
+            <div className="Other-Skils mt-16">
+               <div className=" grid md:grid-cols-4">
+                  <div className=" col-span-1 bg-[#545454] max-w-[260px] text-white rounded-[10px] py-3">
+                     <div className=" mx-auto w-max ">
+                        <p className=" text-4xl danaDemiBold">سایر مهارت ها</p>
+                     </div>
+                  </div>
+                  <div className=" col-span-3 bg-[#545454] w-full h-[2px] my-auto"></div>
+               </div>
+               <div className=" mt-10 grid md:grid-cols-6  ">
+                  <div class="box">
+                     <div class="percent">
+                        <svg className=" !-scale-[0.7]">
+                           <circle className="axios" cx="70" cy="70" r="70"></circle>
+                           <circle className="axios" cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="num  rounded-full ">
+                           <h2 className="  !rounded-full  bg-[#C4C4C4]/20 !text-[30px] px-[5px] py-[15px]">axios</h2>
+                        </div>
+                     </div>
+                     <h2 class="text absolute -bottom-3 ">90%</h2>
+                  </div>
+                  <div class="box">
+                     <div class="percent">
+                        <svg className=" !-scale-[0.7]">
+                           <circle className="axios" cx="70" cy="70" r="70"></circle>
+                           <circle className="axios" cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="num  rounded-full ">
+                           <h2 className="  !rounded-full  bg-[#C4C4C4]/20  !text-[15px] px-[4px] py-[14px] font-bold">
+                              <p>responsive</p>
+                              <p className=" mx-auto w-max">design</p>
+                           </h2>
+                        </div>
+                     </div>
+                     <h2 class="text absolute -bottom-3 ">90%</h2>
+                  </div>
+                  <div class="box">
+                     <div class="percent">
+                        <svg className=" !-scale-[0.7]">
+                           <circle className="axios" cx="70" cy="70" r="70"></circle>
+                           <circle className="axios" cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="num  rounded-full ">
+                           <h2 className="  !rounded-full  bg-[#C4C4C4]/20 !text-[10px] px-[3.5px] py-[13px]">
+                              <p className=" w-max mx-auto !text-[22px]">&mui</p>
+                              <p className=" font-bold">material tailwind</p>
+                           </h2>
+                        </div>
+                     </div>
+                     <h2 class="text absolute -bottom-3 ">90%</h2>
+                  </div>
+                  <div class="box">
+                     <div class="percent">
+                        <svg className=" !-scale-[0.7]">
+                           <circle className="axios" cx="70" cy="70" r="70"></circle>
+                           <circle className="axios" cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="num  rounded-full ">
+                           <h2 className="  !rounded-full  bg-[#C4C4C4]/20  !text-[15px] px-[4px] py-[7px] ">
+                              <p className=" mx-auto w-max text-[15px]">&git</p>
+                              <p className=" text-[25px]">github</p>
+                           </h2>
+                        </div>
+                     </div>
+                     <h2 class="text absolute -bottom-3 ">90%</h2>
+                  </div>
+                  <div class="box">
+                     <div class="percent">
+                        <svg className=" !-scale-[0.7]">
+                           <circle className="axios" cx="70" cy="70" r="70"></circle>
+                           <circle className="axios" cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="num  rounded-full ">
+                           <h2 className="  !rounded-full  bg-[#C4C4C4]/20 !text-[20px] px-[10px] py-[7px]">
+                              <p>React</p>
+                              <p>Hooks</p>
+                           </h2>
+                        </div>
+                     </div>
+                     <h2 class="text absolute -bottom-3 ">90%</h2>
+                  </div>
+                  <div class="box">
+                     <div class="percent">
+                        <svg className=" !-scale-[0.7]">
+                           <circle className="axios" cx="70" cy="70" r="70"></circle>
+                           <circle className="axios" cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="num  rounded-full ">
+                           <h2 className="  !rounded-full  bg-[#C4C4C4]/20 !text-[19px] px-[8px] py-[9px]">
+                              <p>restFull</p>
+                              <p className=" w-max mx-auto">Api</p>
+                           </h2>
+                        </div>
+                     </div>
+                     <h2 class="text absolute -bottom-3 ">90%</h2>
+                  </div>
+               </div>
+            </div>
+            {/* /// */}
+            <div className="Exaples mt-16">
+               <div className=" grid md:grid-cols-4">
+                  <div className=" col-span-1 bg-[#545454] max-w-[260px] text-white rounded-[10px] py-3">
+                     <div className=" mx-auto w-max ">
+                        <p className=" text-4xl danaDemiBold">نمونه کار ها</p>
+                     </div>
+                  </div>
+                  <div className=" col-span-3 bg-[#545454] w-full h-[2px] my-auto"></div>
+               </div>
+               <div className="w-full min-h-[300px] bg-cover cursor-pointer hoverBox resome3"></div>
+            </div>
+         </div>
+      </div>
+   );
+} -->
