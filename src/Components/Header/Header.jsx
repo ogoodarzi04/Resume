@@ -21,8 +21,8 @@ export function Header() {
       >
          <div className="flex flex-wrap items-center justify-between gap-y-4 text-white">
             <div className=" flex  relative">
-               <MdMenuOpen className=" " style={{ fontSize: 25 }} />
-               <Typography onClick={openDrawerRight} as="a" href="#" className="  my-[1px] cursor-pointer danaMedium text-2xl py-1">
+               <MdMenuOpen onClick={openDrawerRight} className=" " style={{ fontSize: 25 }} />
+               <Typography as="a" href="#" className="  my-[1px] cursor-pointer danaMedium text-2xl py-1">
                   سایر مهارت ها
                </Typography>
             </div>

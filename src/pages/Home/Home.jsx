@@ -19,20 +19,20 @@ export default function Home() {
             </div>
             <div className=" md:col-span-4 text-white danaMedium  ">
                <div className="  rounded-[17px] flex flex-col-reverse md:grid md:grid-cols-2 md:!px-32 px-11" style={{ border: "1px solid rgb(255,235,59)" }}>
-                  <div className="interduction danaBold md:text-[60px] text-7xl col-span-1 md:py-36 py-20 mx-auto">
-                     <div className=" mx-auto">
-                        <p className="">من امید گودرزی</p>
+                  <div className="interduction danaBold text-[36px] md:text-[60px]  col-span-1 md:py-36 py-20 mx-auto">
+                     <div className=" mx-auto ">
+                        <p className=" ">من امید گودرزی</p>
                         <span className=" text-[rgb(255,235,59)]">
                            برنامه نویس فرانت
                            <span className=" !text-white"> هستم</span>
                         </span>
                      </div>
-                     <div className=" mt-8  space-y-[10px]  !text-3xl text-gray-400 ">
-                        <span className=" danaMedium">
+                     <div className=" mt-8  space-y-[10px] text-2xl  md:!text-[17px] text-gray-400 ">
+                        <i className=" danaMedium ">
                            برنامه نویس فرانت اند با تجربه بیش از ۴ سال در توسعه وب و طراحی رابط کاربری. مهارت‌های من شامل HTML، CSS، JavaScript و فریم‌ورک‌هایی مانند React است. توانایی حل مسائل پیچیده
                            و ایجاد تجربه کاربری بهینه از نقاط قوت من است. به تیم‌های چندرشته‌ای با اهتمام به کار تیمی و همکاری نزدیک با طراحان و توسعه‌دهندگان علاقه‌مندم. هدف من ایجاد وب‌سایت‌های
                            کاربرپسند و با کیفیت بالا است که نیازهای مشتریان را برآورده سازد.
-                        </span>
+                        </i>
                      </div>
                      <div className=" pt-14">
                         <Button className=" bg-[rgb(255,235,59)] danaDemiBold w-60 py-7">
@@ -71,9 +71,9 @@ export default function Home() {
 
                <div className=" my-works  mt-44">
                   <div className=" ">
-                     <p className=" mx-auto w-max danaDemiBold text-6xl">نمونه کار های من</p>
+                     <p className=" mx-auto w-max danaBold md:text-6xl text-5xl">نمونه کار های من</p>
                      <div className=" mt-7 text-gray-400 md:px-96">
-                        <i>
+                        <i className=" text-2xl  md:!text-[17px]">
                            {" "}
                            این نمونه کارهایی که مشاهده میکنید حاصل 2 سال آموزش ,تلاش و کسب تجربه به صورت خودآموز بوده که تقریبا زمان زیادی ازم گرفته شد برای لانچ کردن این پروژه ها و سختی های زیادی
                            برام به دنبال داشت اما طی همین چند پروژه تجربه های زیادی کسب کردم و چالش های زیادی رو پشت سر گذروندم.{" "}
