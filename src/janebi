@@ -7,7 +7,7 @@ export default function RSide() {
          <div className="gray-side  size-full px-[41px] py-9">
             <div className=" flex gap-x-32 text-right">
                <div>
-                  <img src="public/images/yolme.jpg" alt="" className=" rounded-full size-[200px]" />
+                  <img src="/images/yolme.jpg" alt="" className=" rounded-full size-[200px]" />
                </div>
                <div className=" grid md:grid-cols-2 my-auto danaMedium gap-9 m-auto">
                   <div className="first-sec space-y-9">
@@ -109,7 +109,7 @@ export default function RSide() {
                   </ul>
                </div>
                <div className=" my-24 me-24">
-                  <img src="public/images/istockphoto-1470714068-612x612_prev_ui.png" alt="" className=" scale-[1.9]" />
+                  <img src="/images/istockphoto-1470714068-612x612_prev_ui.png" alt="" className=" scale-[1.9]" />
                </div>
             </div>
          </div>

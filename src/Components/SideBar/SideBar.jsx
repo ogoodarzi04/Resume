@@ -23,7 +23,7 @@ export default function SideBar(props) {
                </div>
                <div className=" my-auto">
                   <div className=" bg-[rgb(255,235,59)] rounded-full size-[130px] mx-auto relative overflow-hidden ">
-                     <img src="public/images/photo15056327974-removebg-preview.png" alt="profile" className=" mx-auto scale-[0.6]  absolute inset-0 m-auto " />
+                     <img src="/images/photo15056327974-removebg-preview.png" alt="profile" className=" mx-auto scale-[0.6]  absolute inset-0 m-auto " />
                   </div>
                   <div className="  text-[20px]">
                      <div className=" title-profile mx-auto w-max ">امید گودرزی</div>
@@ -80,7 +80,7 @@ export default function SideBar(props) {
                </div>
                <div className="SoftSkils  space-y-[10px] py-14 relative" style={{ borderTop: "1px solid rgb(255, 235, 59)", borderBottom: "1px solid rgb(255, 235, 59)" }}>
                   <div className=" absolute inset-0 m-auto top-56 opacity-45">
-                     <img src="public/images/istockphoto-1470714068-612x612_prev_ui.png" alt="" className="  mb-20 scale-[1.5]" />
+                     <img src="/images/istockphoto-1470714068-612x612_prev_ui.png" alt="" className="  mb-20 scale-[1.5]" />
                   </div>
                   <p className=" danaMedium text-4xl font-bold mb-[10px] !z-50">مهارت های نرم</p>
                   <ul className="list-item  space-y-4 !z-50">
@@ -109,7 +109,7 @@ export default function SideBar(props) {
             <div className="SideBar  text-white danaMedium rounded-[17px]" style={{ border: "1px solid rgb(255,235,59)" }}>
                <div className="Profile  py-20">
                   <div className=" bg-[rgb(255,235,59)] rounded-full size-[170px] mx-auto relative overflow-hidden ">
-                     <img src="public/images/photo15056327974-removebg-preview.png" alt="profile" className=" mx-auto scale-[0.6]  absolute inset-0 m-auto top-6" />
+                     <img src="/images/photo15056327974-removebg-preview.png" alt="profile" className=" mx-auto scale-[0.6]  absolute inset-0 m-auto top-6" />
                   </div>
                   <div className=" mt-12 text-[20px] space-y-3">
                      <div className=" title-profile mx-auto w-max ">امید گودرزی</div>
@@ -171,7 +171,7 @@ export default function SideBar(props) {
                      </div>
                      <div className="SoftSkils  space-y-[10px] py-14 relative" style={{ borderTop: "1px solid rgb(255, 235, 59)", borderBottom: "1px solid rgb(255, 235, 59)" }}>
                         <div className=" absolute inset-0 m-auto top-56 opacity-45">
-                           <img src="public/images/istockphoto-1470714068-612x612_prev_ui.png" alt="" className="  mb-20 scale-[1.5]" />
+                           <img src="/images/istockphoto-1470714068-612x612_prev_ui.png" alt="" className="  mb-20 scale-[1.5]" />
                         </div>
                         <p className=" danaMedium text-4xl font-bold mb-[10px] !z-50">مهارت های نرم</p>
                         <ul className="list-item  space-y-4 !z-50">

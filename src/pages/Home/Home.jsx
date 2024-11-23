@@ -46,7 +46,7 @@ export default function Home() {
                   </div>
                   <div className="my-image relative col-span-1 ">
                      <div className="">
-                        <img className=" mt-24 mx-auto md:-scale-x-[1]" src="public/images/undraw_join_re_w1lh.svg" alt="" />
+                        <img className=" mt-24 mx-auto md:-scale-x-[1]" src="/images/undraw_join_re_w1lh.svg" alt="" />
                      </div>
                   </div>
                </div>

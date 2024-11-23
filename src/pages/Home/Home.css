@@ -130,16 +130,16 @@
 }
 
 .resome1 {
-   background-image: url(public/images/screencapture-learnimoo-vercel-app-2024-11-20-12_48_48.png);
+   background-image: url(/images/screencapture-learnimoo-vercel-app-2024-11-20-12_48_48.png);
 }
 .resome3 {
-   background-image: url(public/images/screencapture-bonmano-custom-netlify-app-2024-11-20-21_25_21.png);
+   background-image: url(/images/screencapture-bonmano-custom-netlify-app-2024-11-20-21_25_21.png);
 }
 .resome2 {
-   background-image: url(public/images/screencapture-learnimoo-liara-run-p-admin-2024-11-21-21_38_43.png);
+   background-image: url(/images/screencapture-learnimoo-liara-run-p-admin-2024-11-21-21_38_43.png);
 }
 .resome4 {
-   background-image: url(public/images/screencapture-wodmart-shop-vercel-app-2024-11-20-21_34_06.png);
+   background-image: url(/images/screencapture-wodmart-shop-vercel-app-2024-11-20-21_34_06.png);
 }
 .hoverBox:hover {
    animation: example 7s linear both alternate;
