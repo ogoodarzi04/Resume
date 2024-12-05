@@ -42,7 +42,7 @@ export function Header() {
             <Drawer placement="top" open={openTop} onClose={closeDrawerTop} className="p-4 h-max">
                {openTop ? <SideBar contactSide={true} /> : ""}
             </Drawer>
-            <Drawer placement="right" open={openRight} onClose={closeDrawerRight} className="p-4 h-max !bg-deep-orange-600">
+            <Drawer placement="right" open={openRight} onClose={closeDrawerRight} className="p-4 h-max">
                {openRight ? <SideBar skilsSide={true} /> : ""}
             </Drawer>
          </div>

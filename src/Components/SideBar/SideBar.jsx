@@ -10,8 +10,7 @@ import { PiSelectionForeground } from "react-icons/pi";
 import { FaDownload } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 export default function SideBar(props) {
-   const telegramId = "@omidgoodarziii";
-   const telegramLink = `https://t.me/${telegramId.slice(1)}`; // Remove '@' for the URL
+   const telegramId = "omidgoodarziii"; // Your Telegram ID
    //
    return (
       <>
@@ -27,7 +26,7 @@ export default function SideBar(props) {
                </div>
                <div className=" my-auto">
                   <div className=" bg-[rgb(255,235,59)] rounded-full size-[130px] mx-auto relative overflow-hidden ">
-                     <img src="public/images/photo15379266000-removebg-preview.png" alt="profile" className=" mx-auto scale-[0.7]  absolute inset-0 m-auto top-8 " />
+                     <img src="public/images/photo15379266000-removebg-preview (1).png" alt="profile" className=" mx-auto scale-[0.6] brightness-110 absolute inset-0 m-auto top-10 " />
                   </div>
                   <div className="  text-[20px]">
                      <div className=" title-profile mx-auto w-max ">امید گودرزی</div>
@@ -35,10 +34,14 @@ export default function SideBar(props) {
                   </div>
                   <div className=" flex gap-x-3   mx-auto w-max text-[#263238]">
                      <div className=" rounded-full  cursor-pointer p-2 bg-[rgb(255,235,59)]">
-                        <BiLogoTelegram style={{ fontSize: 12 }} />
+                        <Link to={`https://t.me/${telegramId}`}>
+                           <BiLogoTelegram style={{ fontSize: 12 }} />
+                        </Link>
                      </div>
                      <div className=" rounded-full  cursor-pointer p-2 bg-[rgb(255,235,59)]">
-                        <GrLanguage style={{ fontSize: 12 }} />
+                        <Link to={"https://github.com/ogoodarzi04"}>
+                           <GrLanguage style={{ fontSize: 12 }} />
+                        </Link>
                      </div>
                      <div className=" rounded-full  cursor-pointer p-2 bg-[rgb(255,235,59)]">
                         <RiTwitterXFill style={{ fontSize: 12 }} />
@@ -113,7 +116,7 @@ export default function SideBar(props) {
             <div className="SideBar  text-white danaMedium rounded-[17px]" style={{ border: "1px solid rgb(255,235,59)" }}>
                <div className="Profile  py-20">
                   <div className=" bg-[rgb(255,235,59)] rounded-full size-[170px] mx-auto relative overflow-hidden ">
-                     <img src="public/images/photo15379266000-removebg-preview.png" alt="profile" className=" mx-auto scale-[0.7] brightness-125  absolute inset-0 m-auto top-12" />
+                     <img src="public/images/photo15379266000-removebg-preview (1).png" alt="profile" className=" mx-auto scale-[0.6] brightness-110 absolute inset-0 m-auto top-14 " />
                   </div>
                   <div className=" mt-12 text-[20px] space-y-3">
                      <div className=" title-profile mx-auto w-max ">امید گودرزی</div>
@@ -121,7 +124,7 @@ export default function SideBar(props) {
                   </div>
                   <div className=" flex gap-x-7 mt-[17px] pb-12 mx-auto w-max text-[#263238]">
                      <div className=" rounded-full  cursor-pointer p-2 bg-[rgb(255,235,59)]">
-                        <Link to={telegramLink} target="_blank" rel="noopener noreferrer">
+                        <Link to={`https://t.me/${telegramId}`}>
                            <BiLogoTelegram style={{ fontSize: 20 }} />
                         </Link>
                      </div>

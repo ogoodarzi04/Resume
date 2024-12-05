@@ -5,7 +5,7 @@ import { FaBootstrap, FaLocationDot, FaReact } from "react-icons/fa6";
 import { SiStatuspage } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { TfiHtml5 } from "react-icons/tfi";
-import { FaSquareJs } from "react-icons/fa6";
+import { FaJsSquare } from "react-icons/fa";
 import { BiLogoTypescript } from "react-icons/bi";
 //
 const conectionBox = [
@@ -40,9 +40,8 @@ const MainSkilsBox = [
       id: 1,
       name: "html",
       icon: (
-         <div className=" p-3">
-            {" "}
-            <TfiHtml5 className=" text-[#ff8400] !size-[62px] " />
+         <div className=" p-[7.1px]">
+            <TfiHtml5 className=" text-[#ff8400] !size-[65px] " />
          </div>
       ),
       color: "bg-[#ff8400]/5",
@@ -52,27 +51,28 @@ const MainSkilsBox = [
       id: 2,
       name: "css",
       icon: (
-         <div className="p-2.5">
-            <IoLogoCss3 className=" text-blue-500 !size-[68px] " />
+         <div className=" p-[5px]">
+            <IoLogoCss3 className=" text-blue-500 !size-[70px] " />
          </div>
       ),
       color: "bg-blue-500/5",
       value: 80,
    },
-   { id: 3, name: "ts", icon: <BiLogoTypescript className=" text-[#392fcf] !size-32" />, color: "bg-[#392fcf]/5", value: 85 },
+
+   { id: 4, name: "ts", icon: <BiLogoTypescript className=" text-[#4d29ff] !size-32 " />, color: "bg-[#4d29ff]/5", value: 85 },
    {
-      id: 4,
+      id: 3,
       name: "js",
       icon: (
          <div className=" p-[6px]">
-            <FaSquareJs className=" text-[#fff129] !size-[69px]" />
+            <FaJsSquare className=" text-[#fff129] !size-[68px] " />
          </div>
       ),
       color: "bg-[#fff129]/5",
       value: 85,
    },
    { id: 5, name: "react", icon: <FaReact className=" text-[#2966ff] !size-32 " />, color: "bg-[#2966ff]/5", value: 90 },
-   { id: 6, name: "tailwind", icon: <RiTailwindCssFill className=" text-[rgb(47,178,195)] !size-32 " />, color: " bg-[rgb(47,178,195)]/5", value: 90 },
+   { id: 6, name: "tailwind", icon: <RiTailwindCssFill className=" text-[rgb(38,168,186)] !size-32 " />, color: "bg-[rgb(38,168,186)]/5", value: 90 },
    { id: 7, name: "bootstrap", icon: <FaBootstrap className=" text-[#9802de] !size-32 " />, color: "bg-[#9802de]/5", value: 85 },
 ];
 export { conectionBox, softSkilsBox, OtherSkilsBox, MainSkilsBox };

@@ -110,17 +110,18 @@
    stroke-dashoffset: calc(440 - (440 * 85) / 100);
    stroke: #fff129;
 }
-.box .percent svg .ts:nth-child(2) {
-   stroke-dashoffset: calc(440 - (440 * 85) / 100);
-   stroke: #392fcf;
-}
 .box .percent svg .react:nth-child(2) {
    stroke-dashoffset: calc(440 - (440 * 90) / 100);
    stroke: #2966ff;
 }
+
+.box .percent svg .ts:nth-child(2) {
+   stroke-dashoffset: calc(440 - (440 * 85) / 100);
+   stroke: #4d29ff;
+}
 .box .percent svg .tailwind:nth-child(2) {
    stroke-dashoffset: calc(440 - (440 * 90) / 100);
-   stroke: rgb(47, 178, 195);
+   stroke: rgb(38, 168, 186);
 }
 
 .box .percent svg .bootstrap:nth-child(2) {
@@ -159,4 +160,7 @@
 }
 .box-border {
    background-color: #0a0a0a !important;
+}
+.break-all {
+   background-color: rgb(255, 235, 59) !important;
 }
