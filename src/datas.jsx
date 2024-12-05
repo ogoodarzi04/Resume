@@ -2,10 +2,11 @@ import { IoLogoCss3, IoMdMail } from "react-icons/io";
 import { FaPhone } from "react-icons/fa";
 import { BsGlobe } from "react-icons/bs";
 import { FaBootstrap, FaLocationDot, FaReact } from "react-icons/fa6";
-import JavascriptIcon from "@mui/icons-material/Javascript";
 import { SiStatuspage } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { TfiHtml5 } from "react-icons/tfi";
+import { FaSquareJs } from "react-icons/fa6";
+import { BiLogoTypescript } from "react-icons/bi";
 //
 const conectionBox = [
    { id: 1, text: "gamyd564@gmail.com", icon: <IoMdMail style={{ fontSize: 20 }} /> },
@@ -35,11 +36,43 @@ const OtherSkilsBox = [
    { id: 6, name: "restFull Api", value: 85 },
 ];
 const MainSkilsBox = [
-   { id: 1, name: "html", icon: <TfiHtml5 className=" text-[#ff8400] !size-32 " />, color: "bg-[#ff8400]/5", value: 90 },
-   { id: 2, name: "css", icon: <IoLogoCss3 className=" text-blue-500 !size-32 " />, color: "bg-blue-500/5", value: 80 },
-   { id: 3, name: "js", icon: <JavascriptIcon className=" text-[#fff129] !size-32" />, color: "bg-[#fff129]/5", value: 85 },
-   { id: 4, name: "react", icon: <FaReact className=" text-[#2966ff] !size-32 " />, color: "bg-[#2966ff]/5", value: 90 },
-   { id: 5, name: "tailwind", icon: <RiTailwindCssFill className=" text-cyan-500 !size-32 " />, color: "bg-cyan-500/5", value: 90 },
-   { id: 6, name: "bootstrap", icon: <FaBootstrap className=" text-[#9802de] !size-32 " />, color: "bg-[#9802de]/5", value: 85 },
+   {
+      id: 1,
+      name: "html",
+      icon: (
+         <div className=" p-3">
+            {" "}
+            <TfiHtml5 className=" text-[#ff8400] !size-[62px] " />
+         </div>
+      ),
+      color: "bg-[#ff8400]/5",
+      value: 90,
+   },
+   {
+      id: 2,
+      name: "css",
+      icon: (
+         <div className="p-2.5">
+            <IoLogoCss3 className=" text-blue-500 !size-[68px] " />
+         </div>
+      ),
+      color: "bg-blue-500/5",
+      value: 80,
+   },
+   { id: 3, name: "ts", icon: <BiLogoTypescript className=" text-[#392fcf] !size-32" />, color: "bg-[#392fcf]/5", value: 85 },
+   {
+      id: 4,
+      name: "js",
+      icon: (
+         <div className=" p-[6px]">
+            <FaSquareJs className=" text-[#fff129] !size-[69px]" />
+         </div>
+      ),
+      color: "bg-[#fff129]/5",
+      value: 85,
+   },
+   { id: 5, name: "react", icon: <FaReact className=" text-[#2966ff] !size-32 " />, color: "bg-[#2966ff]/5", value: 90 },
+   { id: 6, name: "tailwind", icon: <RiTailwindCssFill className=" text-[rgb(47,178,195)] !size-32 " />, color: " bg-[rgb(47,178,195)]/5", value: 90 },
+   { id: 7, name: "bootstrap", icon: <FaBootstrap className=" text-[#9802de] !size-32 " />, color: "bg-[#9802de]/5", value: 85 },
 ];
 export { conectionBox, softSkilsBox, OtherSkilsBox, MainSkilsBox };

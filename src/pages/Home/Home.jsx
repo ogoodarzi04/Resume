@@ -51,7 +51,7 @@ export default function Home() {
                   </div>
                </div>
                <div className="MainSkils mt-28">
-                  <div className="SkillBoxes mt-12 grid md:grid-cols-6 gap-y-6 ">
+                  <div className="SkillBoxes mt-12 grid md:grid-cols-7 gap-y-6 ">
                      {MainSkilsBox.map((item) => (
                         <div class="box">
                            <div class="percent">
@@ -69,7 +69,7 @@ export default function Home() {
                   </div>
                </div>
 
-               <div className=" my-works  mt-44">
+               <div className=" my-works  mt-36">
                   <div className=" ">
                      <p className=" mx-auto w-max danaBold md:text-6xl text-5xl">نمونه کار های من</p>
                      <div className=" mt-7 text-gray-400 md:px-96">

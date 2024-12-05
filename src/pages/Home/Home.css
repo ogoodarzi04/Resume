@@ -110,13 +110,17 @@
    stroke-dashoffset: calc(440 - (440 * 85) / 100);
    stroke: #fff129;
 }
+.box .percent svg .ts:nth-child(2) {
+   stroke-dashoffset: calc(440 - (440 * 85) / 100);
+   stroke: #392fcf;
+}
 .box .percent svg .react:nth-child(2) {
    stroke-dashoffset: calc(440 - (440 * 90) / 100);
    stroke: #2966ff;
 }
 .box .percent svg .tailwind:nth-child(2) {
    stroke-dashoffset: calc(440 - (440 * 90) / 100);
-   stroke: rgb(0 188 212);
+   stroke: rgb(47, 178, 195);
 }
 
 .box .percent svg .bootstrap:nth-child(2) {
