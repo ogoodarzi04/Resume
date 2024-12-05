@@ -27,7 +27,7 @@ export default function SideBar(props) {
                </div>
                <div className=" my-auto">
                   <div className=" bg-[rgb(255,235,59)] rounded-full size-[130px] mx-auto relative overflow-hidden ">
-                     <img src="public/images/photo15379266000-removebg-preview.png" alt="profile" className=" mx-auto scale-[0.6]  absolute inset-0 m-auto " />
+                     <img src="public/images/photo15379266000-removebg-preview.png" alt="profile" className=" mx-auto scale-[0.7]  absolute inset-0 m-auto top-8 " />
                   </div>
                   <div className="  text-[20px]">
                      <div className=" title-profile mx-auto w-max ">امید گودرزی</div>
